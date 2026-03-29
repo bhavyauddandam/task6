@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function showDate(){
+    var d = new Date();
+    document.getElementById("date").value = d.toLocaleDateString();
+}
+
+function factorial(){
+    var n = prompt("Enter a number:");
+    var fact = 1;
+
+    for(var i=1; i<=n; i++){
+        fact = fact * i;
+    }
+
+    alert("Factorial = " + fact);
+}
+</script>
+</head>
+
+<body>
+
+<h2>JavaScript Popup Programs</h2>
+
+<input type="text" id="date">
+<button onclick="showDate()">Display Date</button>
+
+<br><br>
+
+<button onclick="factorial()">Calculate Factorial</button>
+
+</body>
+</html>
